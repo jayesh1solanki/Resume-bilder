@@ -1,0 +1,374 @@
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: #9b9b9b;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#nav img{
+    width: 10vh;
+
+}
+
+/* Aside section */
+/* it styles the hole resume page  */
+#resume {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: 6% auto 1.5% auto;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 0 5px gray;
+    padding: 10px;
+}
+.add{
+    width: 1.7%;
+}
+
+#aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    padding: 0%;
+    margin: 0%;
+}
+
+@media (max-width:600px) {
+    #main {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #resume {
+        flex-direction: column;
+    }
+
+    #contact {
+        margin: 0px 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact p {
+        display: none;
+    }
+
+    #contact text {
+        display: none;
+    }
+
+    .box .text {
+        display: none;
+    }
+
+    #aside {
+        width: 100%;
+    }
+
+    #social {
+        display: none;
+    }
+
+    #language {
+        display: none;
+    }
+
+    #styled-hr {
+        display: none;
+    }
+
+    .styled-hr {
+        display: none;
+    }
+
+}
+
+@media (min-width: 600px) {
+    footer {
+        display: none;
+    }
+}
+
+footer {
+    border-top: solid black 1px;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+    font-size: 1.5vw;
+}
+
+footer .contact {
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+}
+
+.languages p {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 2px;
+}
+
+/* it styles the profile photo section  */
+#photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* it styles BIO */
+#info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    font-size: 2vw;
+    margin: 0%;
+    padding: 0%;
+}
+
+#bio {
+    font-size: 1vw;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* it styles the horizontal line */
+hr.styled-hr {
+    border-top: solid gray 1px;
+    margin: 10px 20px;
+    padding: 0;
+}
+
+/* it styles the container for contact, social and language information */
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+/* it styles single contact detail like E-mail or instagram */
+.box a {
+
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+}
+
+.box:hover {
+    transform: scale(5px);
+    cursor: pointer;
+    color: darkgray;
+}
+
+.box .icon img {
+    min-width: 2.5vw;
+    padding: 0%;
+    margin: 0%;
+}
+
+.box .text {
+    font-size: 1vw;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+}
+
+.box .text h5 {
+    padding: 0%;
+    margin: 0%;
+}
+
+.box .text p {
+    padding: 0%;
+    margin: 0%;
+}
+
+.edit img {
+    max-width: 20px;
+}
+
+#styled-hr {
+    border: solid lightslategrey 1px;
+    width: 0%;
+    margin: 25px;
+    margin-right: 0%;
+}
+
+#main {
+    margin: 20px 0px;
+    width: 100%;
+
+}
+
+#main .pointers {
+    padding: 7px;
+    margin: 0%;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+.company{
+    background-color: #ececec;
+    padding: 10px;
+    margin: 5px;
+}
+.employer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.job_discription{
+    display: none;
+    flex-direction: column;
+    font-size: 1vw;
+}
+
+.company:hover {
+    background-color: #c4c1c1;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 3.5vw;
+    padding: 0%;
+    margin: 0%;
+}
+
+.emp-details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.company .text1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin-left: 15px;
+    font-size: 1vw;
+}
+
+.company .text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 0.8vw;
+}
+
+.text2 img {
+    width: 0.8vw;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+}
+
+.skils {
+    background-color: #ececec;
+    border-radius: 50px;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1vw;
+}
+
+.skils:hover {
+    background-color: #c4c1c1;
+    cursor: pointer;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    padding: 10px;
+}
+
+.education {
+    border-bottom: solid black 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2.5px;
+    padding: 5px;
+}
+
+.education:hover {
+    cursor: pointer;
+}
+
+.education img {
+    width: 10vw;
+}
+
+.education div {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9vw;
+    margin-left: 10px;
+}
+
+#trash{
+    width: 1.5vw;
+}
