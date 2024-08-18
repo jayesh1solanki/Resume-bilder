@@ -5,31 +5,13 @@ body {
     padding: 0;
 }
 
-#nav {
-    width: 100vw;
-    height: 10vh;
-    background-color: #9b9b9b;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-
-#nav img{
-    width: 10vh;
-
-}
-
 /* Aside section */
 /* it styles the hole resume page  */
 #resume {
     display: flex;
     flex-direction: row;
     max-width: 90%;
-    margin: 6% auto 1.5% auto;
+    margin: 1.5% auto 1.5% auto;
     background-color: white;
     border-radius: 9px;
     box-shadow: 0 0 5px gray;
@@ -198,7 +180,7 @@ hr.styled-hr {
 }
 
 .box .icon img {
-    min-width: 2.5vw;
+    width: 2.5vw;
     padding: 0%;
     margin: 0%;
 }
