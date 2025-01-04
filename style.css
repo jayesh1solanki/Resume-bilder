@@ -398,7 +398,7 @@ footer {
 .container5 section {
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
+    overflow-x: scroll;
     
 }
 
