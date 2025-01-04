@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Resume</title>
+    <link rel="icon" href="cv.png">
+    <style>
+        body {
+            background-image: url(Background.png);
+            background-size: cover;
+        }
+
+        #intro {
+            display: flex;
+            width: 50vw;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        span {
+            margin: -2%;
+            padding: 0%;
+        }
+
+        h1 {
+            margin-bottom: 0%;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 7vw;
+            line-height: 5vh;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 3vw;
+            line-height: 3vw;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.03em;
+        }
+
+        #login {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 50%;
+            align-self: center;
+        }
+
+        input {
+            background: transparent;
+            height: 30px;
+            border: solid black 1px;
+            border-radius: 5px;
+            font-size: 1vw;
+        }
+
+        button {
+            background: linear-gradient(45deg, #5f92ff, #7a76a7);
+            border: none;
+            color: white;
+            font-size: 1.2vw;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            height: 30px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro">
+        <h1><span>Pro</span> <span style="color:rgb(50, 50, 172);">Resume</h1>
+
+        <p>Modern, clean and pro customizable resume & cover letter templates.</p>
+
+        <div id="login">
+            <input type="email" placeholder="E-mail address">
+            <br>
+            <input type="password" placeholder="Password">
+            <a href="" style="text-decoration: none; text-align: right; font-size: 1vw;">Forget password?</a>
+            <button style="margin-top: 10px;">Sign in</button>
+            <br>
+            <button style="margin-top: 10px;">Login with Google</button>
+            <button style="margin-top: 10px;">Login with LinkedIn</button>
+        </div>
+    </div>
+</body>
+
+</html>
