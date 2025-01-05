@@ -2,135 +2,108 @@
 <html lang="en">
 
 <head>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to external JavaScript files -->
     <script src="script.js"></script>
     <script src="experience form.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Resume</title>
+    <!-- Favicon for the webpage -->
     <link rel="icon" href="Icons/JS-logo.svg">
+    <!-- Ionicons for icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <!-- Main resume container -->
     <div id="resume">
-        <section id="aside"> <!--contain details in left sid -->
-            <div id="photo">
-                <img src="Icons/zoro.jpg" alt="Profile photo">
+        <!-- Profile photo section -->
+        <div id="photo">
+            <img src="Icons/zoro.jpg" alt="Profile photo">
+        </div>
+
+        <!-- Bio section -->
+        <div id="info">
+            <span id="name">Roronova Zoro</span>
+            <br>
+            <span id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque cum odio corporis
+                explicabo totam quo porro! Aspernatur, et? Suscipit?</span>
+            <br>
+        </div>
+
+        <!-- Horizontal line -->
+        <hr class="styled-hr">
+
+        <!-- Contact information section -->
+        <div class="contact" id="contact">
+            <div class="box">
+                <a href="mailto:jayeshgs10@gmail.com" target="_blank">
+                    <div class="icon"><img src="Icons/Email.svg" alt="Email"></div>
+                </a>
             </div>
 
-            <div id="info"> <!--Bio of the user -->
-                <span id="name">Jayesh Solanki</span>
-                <br>
-                <span id="bio">To leverage my analytical skills and technical expertise in a challenging environment
-                    that offers enriching learning experiences, contributing to the organization's success while
-                    fostering my personal and professional growth.</span>
-                <br>
+            <div class="box">
+                <a href="" target="_blank">
+                    <div class="icon"><img src="Icons/Website.svg" alt="Website"></div>
+                </a>
             </div>
 
-            <hr class="styled-hr"> <!--Horizontal line-->
-            <!--this container displays the personal information of the user-->
-            <div class="contact" id="contact">
-                <p>contact</p>
-                <div class="box">
-                    <a href="mailto:jayeshgs10@gmail.com" target="_blank">
-                        <div class="icon"><img src="Icons/Email.svg" alt=""></div>
-                        <div class="text">
-                            <h5>Email</h5>
-                            <span>jayeshgs10@gmail.com</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="box">
-                    <a href="" target="_blank">
-                        <div class="icon"><img src="Icons/Website.svg" alt=""></div>
-                        <div class="text">
-                            <h5>Website</h5>
-                            <span>Enter your Website</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="box">
-                    <a href="" target="_blank">
-                        <div class="icon"><img src="Icons/Phone.svg" alt=""></div>
-                        <div class="text">
-                            <h5>Phone</h5>
-                            <span>+91-##########</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="box">
-                    <a href="https://maps.app.goo.gl/ErTDEgCaE5A1oGDH7" target="_blank">
-                        <div class="icon"><img src="Icons/Location.svg" alt=""></div>
-                        <div class="text">
-                            <h5>Location</h5>
-                            <span>Mumbai</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="box">
+                <a href="" target="_blank">
+                    <div class="icon"><img src="Icons/Phone.svg" alt="Phone"></div>
+                </a>
             </div>
 
-            <hr class="styled-hr"> <!--Horizontal line-->
-
-            <div class="contact" id="social">
-                <p>Social</p>
-                <div class="box">
-                    <a href="https://www.instagram.com/jayeshgs10/" target="_blank">
-                        <div class="icon"><img src="Icons/Instagram.svg" alt=""></div>
-                        <div class="text">
-                            <h5>Instagram</h5>
-                            <span>jayeshgs10</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="box">
-                    <a href="https://www.linkedin.com/in/jayesh-solanki-b04b79170/" target="_blank">
-                        <div class="icon"><img src="Icons/Linkedin.svg" alt=""></div>
-                        <div class="text">
-                            <h5>Linkedin</h5>
-                            <span>linkedin.com/in/jayesh-solanki-b04b79170</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="box">
-                    <a href="" target="_blank">
-                        <div class="icon"><img src="Icons/Twitter.svg" alt=""></div>
-                        <div class="text">
-                            <h5>Twitter</h5>
-                            <span>Enter your Twitter</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="box">
+                <a href="https://maps.app.goo.gl/ErTDEgCaE5A1oGDH7" target="_blank">
+                    <div class="icon"><img src="Icons/Location.svg" alt="Location"></div>
+                    <div class="text"></div>
+                </a>
             </div>
 
-            <hr class="styled-hr"> <!--Horizontal line-->
-
-            <div class="contact" id="language">
-                <p>Language</p>
-                <ul>
-                    <li>English</li>
-                    <li>Hindi</li>
-                    <li>Marathi</li>
-                    <li>Gujarati</li>
-                </ul>
+            <div class="box">
+                <a href="https://www.instagram.com/jayeshgs10/" target="_blank">
+                    <div class="icon"><img src="Icons/Instagram.svg" alt="Instagram"></div>
+                </a>
             </div>
-        </section>
 
+            <div class="box">
+                <a href="https://www.linkedin.com/in/jayesh-solanki-b04b79170/" target="_blank">
+                    <div class="icon"><img src="Icons/linkedIn_PNG8.png" alt="LinkedIn"></div>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="" target="_blank">
+                    <div class="icon"><img src="Icons/twitter-png.jpg" alt="Twitter"></div>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="" target="_blank">
+                    <div class="icon"><img src="Icons/github.jpg" alt="GitHub"></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Languages section -->
+        <div class="pointers">Languages <img src="Icons/add.svg" alt="Add" class="add" id="add-skills"></div>
+        <div class="languages" id="language">
+            <div>English</div>
+        </div>
         <div id="styled-hr"></div>
 
+        <!-- Main content section -->
         <section id="main">
-
-            <div class="pointers">Experience <img src="Icons/add.svg" alt="" class="add" id="add-experience"></div>
-
+            <!-- Experience section -->
+            <div class="pointers">Experience <img src="Icons/add.svg" alt="Add" class="add" id="add-experience"></div>
             <div class="container1">
                 <div class="company" onclick="show(this)">
                     <div class="employer">
@@ -146,7 +119,7 @@
                             </div>
                             <div class="text2">
                                 <span class="Duration">March 2021 to May 2024 | (3 years and 2 months)</span>
-                                <span class="location"><img src="Icons/location-2.svg" alt="">Airoli, Mumbai</span>
+                                <span class="location"><img src="Icons/location-2.svg" alt="Location">Airoli, Mumbai</span>
                             </div>
                         </div>
                     </div>
@@ -161,7 +134,7 @@
                             details
                             recorded in the front office system with those in the middle and back office systems.
                             Ensuring
-                            that the trade details are consistent across all systems.</li>
+                            that the trade details are consistent across all systems.
                             Execute reconciliation processes to validate trade data, identifying and rectifying
                             discrepancies
                             to uphold data integrity and minimize operational risks.
@@ -170,78 +143,34 @@
                             the development and implementation of streamlined workflows.
                         </p>
                         <br>
-                        <img src="Icons/trash.svg" alt="" id="trash">
-                        <img src="Icons/edit.svg" alt="" id="trash" style="position: absolute; right: 0;">
-                    </div>
-                </div>
-                <div class="company" onclick="show(this)">
-                    <div class="employer">
-                        <div class="icon">
-                            <img src="https://media.licdn.com/dms/image/D560BAQFgKlmgJodbhA/company-logo_200_200/0/1720615030425/eclerx_logo?e=2147483647&v=beta&t=pRXqje7H48YxQ89uslfLRoD23NSsiCrm_FEwbiLb_QQ"
-                                alt="Co. Logo">
-                        </div>
-                        <div class="emp-details">
-                            <div class="text1">
-                                <span class="desination"><b>Financial Analyst</b></span>
-                                <span class="company-name"><a href="https://eclerx.com/" target="_blank">Eclerx Service
-                                        ltd.</a></span>
-                            </div>
-                            <div class="text2">
-                                <span class="Duration">March 2021 to May 2024 | (3 years and 2 months)</span>
-                                <span class="location"><img src="Icons/location-2.svg" alt="">Airoli, Mumbai</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job_discription">
-                        <h4>Job role summary</h4>
-                        <p><b>Financial Market (Reconciliation -OTC Derivative) Trade,
-                                Position Reconciliation and Risk
-                                Mitigation, Process Enhancement</b></p>
-                        <br>
-                        <p>
-                            Performing Trade and position reconciliation, this involves comparing trade and position
-                            details
-                            recorded in the front office system with those in the middle and back office systems.
-                            Ensuring
-                            that the trade details are consistent across all systems.</li>
-                            Execute reconciliation processes to validate trade data, identifying and rectifying
-                            discrepancies
-                            to uphold data integrity and minimize operational risks.
-                            Continuously evaluate and enhance confirmation and reconciliation procedures,
-                            contributing to
-                            the development and implementation of streamlined workflows.
-                        </p>
-                        <br>
-                        <img src="Icons/trash.svg" alt="" id="trash">
-                        <img src="Icons/edit.svg" alt="" id="trash" style="position: absolute; right: 0;">
+                        <img src="Icons/trash.svg" alt="Delete" id="trash">
+                        <img src="Icons/edit.svg" alt="Edit" id="trash" style="position: absolute; right: 0;">
                     </div>
                 </div>
             </div>
-            <div class="pointers">skills <img src="Icons/add.svg" alt="" class="add" id="add-skills"></div>
 
+            <!-- Skills section -->
+            <div class="pointers">skills <img src="Icons/add.svg" alt="Add" class="add" id="add-skills"></div>
             <div class="container2">
                 <div class="skills">
                     <span>HTML</span>
                 </div>
-
                 <div class="skills">
                     <span>CSS3</span>
                 </div>
                 <div class="skills">
                     <span>JavaScript</span>
                 </div>
-
                 <div class="skills">
                     <span>Excel</span>
                 </div>
-
                 <div class="skills">
                     <span>Outlook</span>
                 </div>
             </div>
 
-            <div class="pointers">Education <img src="Icons/add.svg" alt="" class="add" id="add-education"></div>
-
+            <!-- Education section -->
+            <div class="pointers">Education <img src="Icons/add.svg" alt="Add" class="add" id="add-education"></div>
             <div class="container3">
                 <div class="education">
                     <img src="https://universitykart.b-cdn.net//Content/upload/admin/uhjjm31d.wuj.png"
@@ -253,7 +182,6 @@
                             target="_blank">Manipal University Jaipur</a>
                     </div>
                 </div>
-
                 <div class="education">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyj5FDYTz2zIysK4cs-yNIwAnIofkJ--cOHg&s"
                         alt="University Name">
@@ -264,7 +192,6 @@
                             target="_blank">Munbai University</a>
                     </div>
                 </div>
-
                 <div class="education">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWA8v2NkR94Sac5wqwcLhjo6mTIDhRcGDYRQ&s"
                         alt="University Name">
@@ -275,7 +202,6 @@
                             target="_blank">State Board of Maharashtra</a>
                     </div>
                 </div>
-
                 <div class="education">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWA8v2NkR94Sac5wqwcLhjo6mTIDhRcGDYRQ&s"
                         alt="University Name">
@@ -288,11 +214,12 @@
                 </div>
             </div>
 
+            <!-- Projects section -->
             <div class="container5">
-                <div class="pointers">Projects<img src="Icons/add.svg" alt="" class="add" id="add-projects"></div>
+                <div class="pointers">Projects<img src="Icons/add.svg" alt="Add" class="add" id="add-projects"></div>
                 <section>
                     <div class="project" id="proj1">
-                        <img src="Icons/place holder.webp" alt="">
+                        <img src="Icons/place holder.webp" alt="Project Image">
                         <div class="project-info" id="proj1-details">
                             <h3><a href="#">Project Title</a></h3>
                             <p class="show-summery">Project Summary</p>
@@ -310,7 +237,7 @@
                         </div>
                     </div>
                     <div class="project" id="proj1">
-                        <img src="Icons/place holder.webp" alt="">
+                        <img src="Icons/place holder.webp" alt="Project Image">
                         <div class="project-info" id="proj1-details">
                             <h3><a href="#">Project Title</a></h3>
                             <p class="show-summery">Project Summary</p>
@@ -328,7 +255,7 @@
                         </div>
                     </div>
                     <div class="project" id="proj1">
-                        <img src="Icons/place holder.webp" alt="">
+                        <img src="Icons/place holder.webp" alt="Project Image">
                         <div class="project-info" id="proj1-details">
                             <h3><a href="#">Project Title</a></h3>
                             <p class="show-summery">Project Summary</p>
@@ -346,7 +273,7 @@
                         </div>
                     </div>
                     <div class="project" id="proj1">
-                        <img src="Icons/place holder.webp" alt="">
+                        <img src="Icons/place holder.webp" alt="Project Image">
                         <div class="project-info" id="proj1-details">
                             <h3><a href="#">Project Title</a></h3>
                             <p class="show-summery">Project Summary</p>
@@ -366,10 +293,8 @@
                 </section>
             </div>
     </div>
-    </section>
-    </div>
-    </div>
 
+    <!-- Footer section -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -382,16 +307,13 @@
         </div>
         <div class="footer-bottom">
             <p>© 2024 Resume Builder. All Rights Reserved.</p>
-            <p><a href="#">Home</a> | <a href="#">Downlode Resume</a> | <a href="#">View Templates</a></p>
+            <p><a href="#">Home</a> | <a href="#">Download Resume</a> | <a href="#">View Templates</a></p>
         </div>
     </footer>
 
+    <!-- Forms for adding new entries -->
 
-
-    <!--****************the below are the forms for the web site****************-->
-
-
-    <!-- EXPERIENCE FORM -->
+    <!-- Experience Form -->
     <div id="experience-form">
         <form id="work-experience">
             <h3>Add New Experience</h3>
@@ -441,14 +363,15 @@
             <button type="submit">Add Experience</button>
         </form>
     </div>
-    <!-- SKILLS -->
-    <div id="skill-from">
 
+    <!-- Skills Form -->
+    <div id="skill-from">
+        <!-- Add skills form content here -->
     </div>
 
-    <!-- Projects -->
+    <!-- Projects Form -->
     <div id="projects-from">
-
+        <!-- Add projects form content here -->
     </div>
 </body>
 
