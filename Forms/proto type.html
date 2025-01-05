@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #4cae4c;
+        }
+        .resume-preview {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .resume-preview h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            color: #333;
+        }
+        .resume-preview p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Enter your education details"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter your skills"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Enter your work experience"></textarea>
+        </div>
+        <button class="btn" onclick="buildResume()">Build Resume</button>
+        <button class="btn" onclick="generatePDF()">Download PDF</button>
+        <button class="btn" onclick="generateWord()">Download Word</button>
+        <div class="resume-preview" id="resumePreview">
+            <!-- The generated resume will be shown here -->
+        </div>
+    </div>
+
+    <!-- Include jsPDF library for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Include docx library for Word document generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/6.1.0/docx.min.js"></script>
+    <script>
+        function buildResume() {
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var education = document.getElementById('education').value;
+            var skills = document.getElementById('skills').value;
+            var experience = document.getElementById('experience').value;
+
+            // Build the resume preview
+            var resumeContent = `
+                <h2>${name}</h2>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <h3>Education</h3>
+                <p>${education}</p>
+                <h3>Skills</h3>
+                <p>${skills}</p>
+                <h3>Experience</h3>
+                <p>${experience}</p>
+            `;
+
+            // Display the resume preview
+            document.getElementById('resumePreview').innerHTML = resumeContent;
+        }
+
+        function generatePDF() {
+            var { jsPDF } = window.jspdf;
+            var doc = new jsPDF();
+
+            // Capture the resume content in text format
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var education = document.getElementById('education').value;
+            var skills = document.getElementById('skills').value;
+            var experience = document.getElementById('experience').value;
+
+            // Add text to the PDF
+            doc.text(20, 30, `Name: ${name}`);
+            doc.text(20, 40, `Email: ${email}`);
+            doc.text(20, 50, `Phone: ${phone}`);
+            doc.text(20, 60, 'Education:');
+            doc.text(20, 70, education);
+            doc.text(20, 80, 'Skills:');
+            doc.text(20, 90, skills);
+            doc.text(20, 100, 'Experience:');
+            doc.text(20, 110, experience);
+
+            // Save the PDF
+            doc.save('resume.pdf');
+        }
+
+        function generateWord() {
+            // Create a new document
+            var doc = new docx.Document();
+
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var education = document.getElementById('education').value;
+            var skills = document.getElementById('skills').value;
+            var experience = document.getElementById('experience').value;
+
+            // Add text to the Word document
+            doc.addSection({
+                properties: {},
+                children: [
+                    new docx.Paragraph({ text: `Name: ${name}`, heading: docx.HeadingLevel.HEADING_1 }),
+                    new docx.Paragraph({ text: `Email: ${email}` }),
+                    new docx.Paragraph({ text: `Phone: ${phone}` }),
+                    new docx.Paragraph({ text: 'Education', heading: docx.HeadingLevel.HEADING_2 }),
+                    new docx.Paragraph({ text: education }),
+                    new docx.Paragraph({ text: 'Skills', heading: docx.HeadingLevel.HEADING_2 }),
+                    new docx.Paragraph({ text: skills }),
+                    new docx.Paragraph({ text: 'Experience', heading: docx.HeadingLevel.HEADING_2 }),
+                    new docx.Paragraph({ text: experience }),
+                ],
+            });
+
+            // Save the Word document
+            docx.Packer.toBlob(doc).then(blob => {
+                var link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'resume.docx';
+                link.click();
+            });
+        }
+    </script>
+</body>
+</html>

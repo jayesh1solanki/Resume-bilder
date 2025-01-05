@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <style>
+        #work-experience {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(109, 109, 109);
+            width: 50vw;
+            margin: auto;
+            padding: 10px;
+            font-size: 1.2vw;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        #work-experience input {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+            height: 25px;
+        }
+
+        #work-experience textarea {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #work-experience button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #work-experience button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="work-experience">
+        <h3>Add New Experience</h3>
+
+        <label for="jobTitle">Job Title<sup>*</sup></label>
+        <input type="text" name="jobTitle" id="jobTitle" required>
+        <br>
+
+        <label for="companyName">Company Name<sup>*</sup></label>
+        <input type="text" name="companyName" id="companyName" required>
+        <br>
+        <input type="url" name="companyURL" id="companyURL" placeholder="Company web page link (Optional)">
+        <br>
+
+        <label for="location">Location<sup>*</sup></label>
+        <input type="text" name="location" id="location" placeholder="City, State, Country" required>
+        <br>
+
+        <label for="startDate">Start Date<sup>*</sup></label>
+        <input type="month" name="startDate" id="startDate" required>
+        <br>
+
+        <label for="endDate">End Date<sup>*</sup></label>
+        <input type="month" name="endDate" id="endDate" required>
+        <span>
+            <input type="checkbox" name="present" id="present" style="height: auto;">
+            <label for="present">I am currently working here</label>
+        </span>
+        <br>
+
+        <label for="jobDiscription">Job Description/Responsibilities<sup>*</sup></label>
+        <textarea name="jobDiscription" id="jobDiscription" rows="5"></textarea>
+        <br>
+
+        <label for="keySkills">Key Skills</label>
+        <textarea name="keySkills" id="keySkills" placeholder="Separate each skill with commas"></textarea>
+        <br>
+
+        <label for="achievements">Achievements/Accomplishments (Optional)</label>
+        <textarea name="achievements" id="achievements"></textarea>
+        <br>
+
+        <label for="reasonForLeaving">Reason for Leaving (optional)</label>
+        <textarea name="reasonForLeaving" id="reasonForLeaving"></textarea>
+        <br>
+
+        <button type="submit">Add Experience</button>
+    </form>
+</body>
+
+</html>

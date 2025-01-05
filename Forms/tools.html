@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Tool/Technology</title>
+    <style>
+        #toolForm {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(109, 109, 109);
+            width: 50vw;
+            margin: auto;
+            padding: 10px;
+            font-size: 1.2vw;
+        }
+
+        #toolForm input,
+        select,
+        option {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+            height: 25px;
+        }
+
+        #toolForm textarea {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+        }
+
+        #toolForm button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #toolForm button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="toolForm">
+        <h3>Add New Tool/Technology</h3>
+
+        <label for="toolName">Tool/Technology Name</label>
+        <input type="text" id="toolName" name="toolName" required>
+        <br>
+
+        <label for="proficiencyLevel">Proficiency Level</label>
+        <select id="proficiencyLevel" name="proficiencyLevel" required>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+            <option value="Expert">Expert</option>
+        </select>
+        <br>
+
+        <label for="experienceDuration">Experience Duration</label>
+        <input type="text" id="experienceDuration" name="experienceDuration" placeholder="e.g., 2 years, 6 months"
+            required>
+        <br>
+
+        <label for="usageContext">Usage Context</label>
+        <textarea id="usageContext" name="usageContext" rows="3" required></textarea>
+        <br>
+
+        <label for="certifications">Certifications (optional)</label>
+        <textarea id="certifications" name="certifications" rows="2"></textarea>
+        <br>
+
+        <label for="version">Version (optional)</label>
+        <input type="text" id="version" name="version">
+        <br>
+        
+        <label for="projectExamples">Project Examples (optional)</label>
+        <textarea id="projectExamples" name="projectExamples" rows="3"></textarea>
+        <br>
+
+        <button type="submit">Add Tool/Technology</button>
+    </form>
+
+</body>
+
+</html>

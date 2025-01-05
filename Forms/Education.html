@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        #education {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(109, 109, 109);
+            width: 50vw;
+            margin: auto;
+            padding: 10px;
+            font-size: 1.2vw;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        #education input,
+        select,
+        option {
+            border: solid #ccc 1px;
+            border-radius: 5px;
+            height: 25px;
+            font-size: 1.2vw;
+        }
+
+        #education textarea {
+            border: solid #ccc 1px;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        #education button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #education button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="education">
+        <h3>Add New Education</h3>
+
+        <label for="type">Education Type<sup>*</sup></label>
+        <select name="degree" id="degree" required>
+            <option value="Select">Select</option>
+            <option value="fullTime">Full time</option>
+            <option value="partTime">Part time</option>
+        </select>
+        <br>
+
+        <label for="Qualification">Degree/Qualification<sup>*</sup></label>
+        <select name="degree" id="degree" required>
+            <option value="Select">Select</option>
+            <option value="bachelors">Bachelor's degree</option>
+            <option value="masters">Master's degree</option>
+            <option value="phd">PhD</option>
+            <option value="diploma">Diploma</option>
+            <option value="certificatio">Certificatio</option>
+        </select>
+        <br>
+
+        <label for="fieldOfStudy">Field of Study<sup>*</sup></label>
+        <input type="text" required>
+        <br>
+
+        <label for="institutionName">Institution Name<sup>*</sup></label>
+        <input type="text" placeholder="school, college, or university" required>
+        <br>
+
+        <label for="location">Location<sup>*</sup></label>
+        <input type="text" name="location" id="location" placeholder="City, State, Country" required>
+        <br>
+
+        <label for="startDate">Start Date<sup>*</sup></label>
+        <input type="month" name="startDate" id="startDate" required>
+        <br>
+
+        <label for="endDate">End Date or Expected End Date<sup>*</sup></label>
+        <input type="month" name="endDate" id="endDate" required>
+        <br>
+
+        <label for="grade">Grade/GPA</label>
+        <input type="text" id="grade" name="grade">
+        <br>
+
+        <label for="relevantCourses">Relevant Courses/Projects</label>
+        <textarea id="relevantCourses" name="relevantCourses" rows="3"></textarea>
+        <br>
+
+        <label for="honors">Honors/Awards</label>
+        <textarea id="honors" name="honors" rows="2"></textarea>
+        <br>
+
+        <label for="activities">Activities and Societies (optional)</label>
+        <textarea id="activities" name="activities" rows="2"></textarea>
+        <br>
+
+        <button type="submit">Add Education</button>
+    </form>
+</body>
+
+</html>

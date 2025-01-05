@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        #project {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(109, 109, 109);
+            width: 50vw;
+            margin: auto;
+            padding: 10px;
+            font-size: 1.2vw;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        #project input {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+            height: 25px;
+        }
+
+        #project textarea {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #project button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #project button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="project">
+        <h3>Add New Project</h3>
+        
+        <label for="projectTitle">Project Title</label>
+        <input type="text" id="projectTitle" name="projectTitle" required>
+        <br>
+
+        <label for="projectDescription">Project Description</label>
+        <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+        <br>
+
+        <label for="role">Role</label>
+        <input type="text" id="role" name="role" required>
+        <br>
+
+        <label for="technologiesUsed">Technologies Used</label>
+        <textarea id="technologiesUsed" name="technologiesUsed" rows="2" required></textarea>
+        <br>
+
+        <label for="startDate">Start Date</label>
+        <input type="month" id="startDate" name="startDate" required>
+        <br>
+
+        <label for="endDate">End Date</label>
+        <input type="month" id="endDate" name="endDate">
+        <span>
+            <input type="checkbox" id="ongoing" name="ongoing" style="height: auto;">
+            <label for="ongoing">Ongoing</label>
+        </span>
+        <br>
+
+        <label for="teamSize">Team Size (optional)</label>
+        <input type="number" id="teamSize" name="teamSize" min="1">
+        <br>
+
+        <label for="challenges">Challenges/Problems Solved</label>
+        <textarea id="challenges" name="challenges" rows="3"></textarea>
+        <br>
+
+        <label for="achievements">Achievements/Outcome</label>
+        <textarea id="achievements" name="achievements" rows="3"></textarea>
+        <br>
+
+        <label for="projectURL">Project URL or Demo Link (optional)</label>
+        <input type="url" id="projectURL" name="projectURL">
+        <br>
+
+        <label for="client">Client/Company (optional)</label>
+        <input type="text" id="client" name="client">
+        <br>
+
+        <label for="documentation">Relevant Documentation (optional)</label>
+        <textarea id="documentation" name="documentation" rows="2"></textarea>
+        <br>
+
+        <button type="submit">Add Experience</button>
+    </form>
+</body>
+
+</html>

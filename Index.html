@@ -94,7 +94,7 @@
         </div>
 
         <!-- Languages section -->
-        <div class="pointers">Languages <img src="Icons/add.svg" alt="Add" class="add" id="add-skills"></div>
+        <div class="pointers">Languages <a href="Forms/Work experience.html" class="add" id="add-language"><img src="Icons/add.svg" alt="Add"></a></div>
         <div class="languages" id="language">
             <div>English</div>
         </div>
@@ -103,8 +103,10 @@
         <!-- Main content section -->
         <section id="main">
             <!-- Experience section -->
-            <div class="pointers">Experience <img src="Icons/add.svg" alt="Add" class="add" id="add-experience"></div>
+            <div class="pointers">Experience <a href="Forms/Work experience.html" class="add" id="add-experience"><img src="Icons/add.svg" alt="Add"></a></div>
+            
             <div class="container1">
+
                 <div class="company" onclick="show(this)">
                     <div class="employer">
                         <div class="icon">
@@ -119,7 +121,8 @@
                             </div>
                             <div class="text2">
                                 <span class="Duration">March 2021 to May 2024 | (3 years and 2 months)</span>
-                                <span class="location"><img src="Icons/location-2.svg" alt="Location">Airoli, Mumbai</span>
+                                <span class="location"><img src="Icons/location-2.svg" alt="Location">Airoli,
+                                    Mumbai</span>
                             </div>
                         </div>
                     </div>
@@ -147,10 +150,11 @@
                         <img src="Icons/edit.svg" alt="Edit" id="trash" style="position: absolute; right: 0;">
                     </div>
                 </div>
+                
             </div>
 
             <!-- Skills section -->
-            <div class="pointers">skills <img src="Icons/add.svg" alt="Add" class="add" id="add-skills"></div>
+            <div class="pointers">skills <a href="" class="add" id="add-skills"><img src="Icons/add.svg" alt="Add"></a></div>
             <div class="container2">
                 <div class="skills">
                     <span>HTML</span>
@@ -170,7 +174,7 @@
             </div>
 
             <!-- Education section -->
-            <div class="pointers">Education <img src="Icons/add.svg" alt="Add" class="add" id="add-education"></div>
+            <div class="pointers">Education <a href="Forms/Education.html" class="add" id="add-education"><img src="Icons/add.svg" alt="Add"></a></div>
             <div class="container3">
                 <div class="education">
                     <img src="https://universitykart.b-cdn.net//Content/upload/admin/uhjjm31d.wuj.png"
@@ -216,7 +220,7 @@
 
             <!-- Projects section -->
             <div class="container5">
-                <div class="pointers">Projects<img src="Icons/add.svg" alt="Add" class="add" id="add-projects"></div>
+                <div class="pointers">Projects<a href="Forms/project.html" class="add" id="add-projects"><img src="Icons/add.svg" alt="Add"></a></div>
                 <section>
                     <div class="project" id="proj1">
                         <img src="Icons/place holder.webp" alt="Project Image">
@@ -310,69 +314,6 @@
             <p><a href="#">Home</a> | <a href="#">Download Resume</a> | <a href="#">View Templates</a></p>
         </div>
     </footer>
-
-    <!-- Forms for adding new entries -->
-
-    <!-- Experience Form -->
-    <div id="experience-form">
-        <form id="work-experience">
-            <h3>Add New Experience</h3>
-
-            <label for="jobTitle">Job Title<sup>*</sup></label>
-            <input type="text" name="jobTitle" id="jobTitle" required>
-            <br>
-
-            <label for="companyName">Company Name<sup>*</sup></label>
-            <input type="text" name="companyName" id="companyName" required>
-            <br>
-            <input type="url" name="companyURL" id="companyURL" placeholder="Company web page link (Optional)">
-            <br>
-
-            <label for="location">Location<sup>*</sup></label>
-            <input type="text" name="location" id="location" placeholder="City, State, Country" required>
-            <br>
-
-            <label for="startDate">Start Date<sup>*</sup></label>
-            <input type="month" name="startDate" id="startDate" required>
-            <br>
-
-            <label for="endDate">End Date<sup>*</sup></label>
-            <input type="month" name="endDate" id="endDate" required>
-            <span>
-                <input type="checkbox" name="present" id="present" style="height: auto;">
-                <label for="present">I am currently working here</label>
-            </span>
-            <br>
-
-            <label for="jobDiscription">Job Description/Responsibilities<sup>*</sup></label>
-            <textarea name="jobDiscription" id="jobDiscription" rows="5"></textarea>
-            <br>
-
-            <label for="keySkills">Key Skills</label>
-            <textarea name="keySkills" id="keySkills" placeholder="Separate each skill with commas"></textarea>
-            <br>
-
-            <label for="achievements">Achievements/Accomplishments (Optional)</label>
-            <textarea name="achievements" id="achievements"></textarea>
-            <br>
-
-            <label for="reasonForLeaving">Reason for Leaving (optional)</label>
-            <textarea name="reasonForLeaving" id="reasonForLeaving"></textarea>
-            <br>
-
-            <button type="submit">Add Experience</button>
-        </form>
-    </div>
-
-    <!-- Skills Form -->
-    <div id="skill-from">
-        <!-- Add skills form content here -->
-    </div>
-
-    <!-- Projects Form -->
-    <div id="projects-from">
-        <!-- Add projects form content here -->
-    </div>
 </body>
 
 </html>

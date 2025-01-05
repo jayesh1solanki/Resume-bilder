@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Skill</title>
+    <style>
+        #skillForm {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(109, 109, 109);
+            width: 50vw;
+            margin: auto;
+            padding: 10px;
+            font-size: 1.2vw;
+        }
+
+        #skillForm input,
+        select,
+        option {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+            height: 25px;
+        }
+
+        #skillForm textarea {
+            border: solid #ccc 1px;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #skillForm button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #skillForm button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="skillForm">
+        <h2>Add New Skill</h2>
+
+        <label for="skillName">Skill Name</label>
+        <input type="text" id="skillName" name="skillName" required>
+        <br>
+        <label for="proficiencyLevel">Proficiency Level</label>
+        <select id="proficiencyLevel" name="proficiencyLevel" required>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+            <option value="Expert">Expert</option>
+        </select>
+        <br>
+        <label for="experienceDuration">Experience Duration</label>
+        <input type="text" id="experienceDuration" name="experienceDuration" placeholder="e.g., 2 years, 6 months"
+            required>
+        <br>
+        <label for="relatedTools">Related Tools/Technologies (optional)</label>
+        <textarea id="relatedTools" name="relatedTools"
+            placeholder="List any tools or technologies related to this skill"></textarea>
+        <br>
+        <label for="description">Description (optional)</label>
+        <textarea id="description" name="description" rows="3"
+            placeholder="Describe how you've applied this skill"></textarea>
+        <br>
+        <button type="submit">Add Skill</button>
+    </form>
+
+</body>
+
+</html>
