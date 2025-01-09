@@ -228,7 +228,7 @@ a:hover {
     flex-direction: row;
     margin: 10px 30px;
     scroll-snap-type: x mandatory;
-    overflow-x: hidden;
+    flex-wrap: wrap;
 }
 
 .skills {
