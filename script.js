@@ -9,27 +9,28 @@ function show(element) {
 }
 
 
-// // Function to show the project summery
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Select all project elements
-//     const projects = document.querySelectorAll('.project');
+// Function to show the project summery
 
-//     projects.forEach(project => {
-//         const summery = project.querySelector('.proj-summery');
-//         const showSummery = project.querySelector('.show-summery');
+document.addEventListener('DOMContentLoaded', function () {
+    const projects = document.querySelectorAll('.project');
+    const showSummery = document.querySelectorAll('.show-summery');
+    
+    // Loop through each project to handle modal and summary toggling
+    projects.forEach(project => {
+        const summery = project.querySelector('.proj-summery');
+        const showSummaryText = project.querySelector('.show-summery');
 
-//         // Hide the summary initially
-//         summery.style.display = 'none';
+        // On project click, open modal
+        project.addEventListener('click', function (e) {
+            e.stopPropagation();  // Prevent event from bubbling up to overlay
 
-//         // Add click event listener to toggle summary visibility
-//         project.addEventListener('click', function () {
-//             if (summery.style.display === 'none') {
-//                 summery.style.display = 'block';
-//                 project.style.width = 'fit-content';  // Adjust width when summary is shown
-//             } else {
-//                 summery.style.display = 'none';
-//                 project.style.width = '25%';  // Reset width when summary is hidden
-//             }
-//         });
-//     });
-// });
+            // Toggle the active class for the project (for summary)
+            project.classList.toggle('active');
+            if (summery.style.display === 'none') {
+                summery.style.display = 'block';
+            } else {
+                summery.style.display = 'none';
+            }
+        });
+    });
+});

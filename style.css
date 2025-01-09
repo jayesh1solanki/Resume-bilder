@@ -353,56 +353,58 @@ footer {
 }
 
 /* project section */
-.container5 section {
+
+.container5 {
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    
+    flex-direction: column;
+    margin: 10px 25px 10px 25px;
 }
 
+
+/* Project container inside the modal */
 .project {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column; /* Stacks elements vertically for smaller screens */
-    justify-content: space-between;
-    padding: 15px;
-    width: 100%;
-    max-width: 400px; /* Keeps the project container from stretching too much */
+    align-items: center; /* Align the image and text in a row */
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 98%;
+    max-width: 98%;
     background-color: #ececec;
-    margin: 20px;
-    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
     font-size: 1rem;
     box-sizing: border-box;
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    transition: background-color 0.3s ease;
 }
 
-.project img {
-    width: 80px; /* Defined width for image, adjust based on design needs */
-    height: 80px;
-    border-radius: 10%;
-    margin-bottom: 10px;
-}
-
+/* Project info container */
 .project-info {
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.show-summery {
-    cursor: pointer;
-    color: #000;
+/* The title of the project */
+.project-info h3 {
+    margin: 0;
+    font-size: 1rem;
     font-weight: bold;
 }
 
-.project:hover {
-    background-color: #c4c1c1;
-    cursor: pointer;
-}
-
+/* Detailed summary of the project */
 .proj-summery {
-    display: none; /* Hide detailed summary by default */
+    display: none; /* Hidden by default */
     margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
 .project.active .proj-summery {
-    display: block; /* Show detailed summary when active */
+    display: block; /* Show summary when project is active */
+}
+
+/* Hover effect for project item */
+.project:hover {
+    background-color: #c4c1c1;
+    cursor: pointer;
 }
