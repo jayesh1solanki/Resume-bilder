@@ -59,13 +59,13 @@ p {
 }
 
 #name {
-    font-size: 2vw;
+    font-size: 2rem;
     margin: 0%;
     padding: 0%;
 }
 
 #bio {
-    font-size: 1vw;
+    font-size: 1rem;
     margin: 0%;
     padding: 0%;
 }
@@ -138,7 +138,7 @@ a:hover {
     align-items: center;
     padding: 10px;
     margin: 5px;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .languages div:hover {
@@ -155,7 +155,7 @@ a:hover {
 .pointers {
     padding: 7px;
     margin: 0%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -183,7 +183,7 @@ a:hover {
     position: relative;
     display: none;
     flex-direction: column;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .company:hover {
@@ -208,7 +208,7 @@ a:hover {
     flex-direction: column;
     padding: 0%;
     margin-left: 15px;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .company .text2 {
@@ -216,7 +216,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
-    font-size: 0.8vw;
+    font-size: 0.8rem;
 }
 
 .text2 img {
@@ -237,7 +237,7 @@ a:hover {
     align-items: center;
     padding: 10px;
     margin: 5px;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .skills:hover {
@@ -272,7 +272,7 @@ a:hover {
 .education div {
     display: flex;
     flex-direction: column;
-    font-size: 0.9vw;
+    font-size: 0.9rem;
     margin-left: 10px;
 }
 
